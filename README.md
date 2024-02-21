@@ -22,6 +22,7 @@
 </div>
 
 ## TABLE OF CONTENTS
+
 <details>
 <summary>Title Index</summary>
 <div markdown="1">
@@ -41,7 +42,7 @@
    
 [5.](#5--env) **env**
 
-[6.](#6--usage)  **Usage**
+[6.](#6--usage) **Usage**
 
 [7.](#7--contributing) **Contributing**
 
@@ -65,34 +66,36 @@ Why Recycle Guide?
 
 We're on a mission to empower individuals to make a difference in their communities through responsible waste management. Join us in making the world a cleaner, greener place.
 
+## [2.](#2--start-guide) Start Guide
 
-## [2.](#2--start-guide)  Start Guide
+### [2-1.](#2-1--Prerequisites) Prerequisites
 
-### [2-1.](#2-1--Prerequisites)  Prerequisites
 For building and running the application you need:
 
 <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"> <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white">
 
-### [2-2.](#2-2--Installation)  Installation
+### [2-2.](#2-2--Installation) Installation
 
 1. Clone the repo
    ```sh
    $ git clone https://github.com/CodeforChanges/recycle-ai.git
    $ cd recycle-ai
    ```
-   
 2. Install server
+
    ```sh
    $ python3 -m venv venv
    $ source ./venv/bin/activate
    $ pip install -U pip
    ```
+
    ```sh
    $ pip install -r requirements.txt
    $ pip install -e .
    ```
 
 3. Run RabbitMQ with Docker
+
    ```sh
    $ docker run -d -p 5672:5672 --name rabbitmq rabbitmq
    ```
@@ -103,21 +106,22 @@ For building and running the application you need:
    $ reai
    ```
 
-## [3.](#3--stacks)  Stacks
+## [3.](#3--stacks) Stacks
 
-### [3-1](#3-1--environment)  Environment
-<img src="https://img.shields.io/badge/visual studio code-007ACC?style=for-the-badge&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"> <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white"> 
+### [3-1](#3-1--environment) Environment
 
-### [3-2](#3-2--development)  Development
+<img src="https://img.shields.io/badge/visual studio code-007ACC?style=for-the-badge&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white"> <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">
+
+### [3-2](#3-2--development) Development
 
 <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white"> <img src="https://img.shields.io/badge/pytorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white"> <img src="https://img.shields.io/badge/rabbitmq-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white"> ![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFCA28?style=for-the-badge&logo=hugging%20face&logoColor=white)
 
+### [3-3](#3-3--communication) Communication
 
-### [3-3](#3-3--communication)  Communication
 <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white"> <img src="https://img.shields.io/badge/googlemeet-00897B?style=for-the-badge&logo=googlemeet&logoColor=white"> <img src="https://img.shields.io/badge/discord-5865F2?style=for-the-badge&logo=discord&logoColor=white">
 
+## [4.](#4--how-it-works) How it Works
 
-## [4.](#4--how-it-works)  How it Works
 ```mermaid
 flowchart TB
     user-->controller
@@ -143,21 +147,22 @@ flowchart TB
 
 ```
 
-## [6](#6--usage)  Usage
+## [6](#6--usage) Usage
+
 Recycle Guide can be used in several ways to promote recycling and sustainability:
 
 Waste Identification: Snap a photo of your waste, and the app will tell you what type of material it is and how to recycle it properly. Community Engagement: Share your recycling achievements and tips with the community, fostering a culture of sustainability. Educational Resources: Access a wealth of information on recycling practices and the impact of recycling on the environment.
 
+## [7](#7--contributing) Contributing
 
-## [7](#7--contributing)  Contributing
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
 Fork the Project Create your Feature Branch (git checkout -b feature/AmazingFeature) Commit your Changes (git commit -m 'Add some AmazingFeature') Push to the Branch (git push origin feature/AmazingFeature) Open a Pull Request
 
+## [8](#8--license) License
 
-## [8](#8--license)  License
 Distributed under the MIT License. See LICENSE.txt for more information.
 
+## [9](#--contact) Contact
 
-## [9](#--contact)  Contact
 https://github.com/CodeforChanges/recycle-backend(https://github.com/CodeforChanges/recycle-backend)

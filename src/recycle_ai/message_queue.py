@@ -21,7 +21,7 @@ class MessageQueue:
 
         # Define queues
         self.channel.queue_declare(queue="garbage_classification_requests")
-        self.channel.queue_declare(queue="garbage_classification_results")
+        self.channel.queue_declare(queue="garbage_classification_results", durable=True)
 
         # Set callback method
         self.channel.basic_consume(
