@@ -11,7 +11,7 @@ app = typer.Typer()
 def serve(
     url: Annotated[
         str, typer.Argument(envvar="RECYCLE_AI_MQ_URL")
-    ] = "amqp://guest:guest@localhost:5672/"
+    ] = "amqp://guest:guest@rabbitmq:5672/"
 ):
     print("[INFO] start ai inference server")
 
