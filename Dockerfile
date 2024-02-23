@@ -1,5 +1,7 @@
 FROM python:3.8
 
+ENV RECYCLE_AI_MQ_URL amqp://guest:guest@rabbitmq:5672/
+
 WORKDIR /app
 
 COPY . /app
