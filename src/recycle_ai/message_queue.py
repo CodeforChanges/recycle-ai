@@ -20,7 +20,7 @@ class MessageQueue:
             sys.exit(1)
 
         # Define queues
-        self.channel.queue_declare(queue="garbage_classification_requests")
+        self.channel.queue_declare(queue="garbage_classification_requests", durable=True)
         self.channel.queue_declare(queue="garbage_classification_results", durable=True)
 
         # Set callback method
