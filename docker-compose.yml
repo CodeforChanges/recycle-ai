@@ -7,8 +7,7 @@ services:
     networks:
       - codeforchange_network
     env_file:
-      - .env # 루트 폴더의 .env 파일 위치
-
+      - .env
 networks:
   codeforchange_network:
     external: true
