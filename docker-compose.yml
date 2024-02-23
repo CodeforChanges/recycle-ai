@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  recycle-ai:
+    build: .
+    image: recycle-ai:latest
+    container_name: recycle-ai
+    networks:
+      - codeforchange_network
+    env_file:
+      - .env # 루트 폴더의 .env 파일 위치
+
+networks:
+  codeforchange_network:
+    external: true
